@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="Cluster.h" />
     <ClInclude Include="PointGeneretor.h" />
+    <ClInclude Include="Sequential.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data.csv" />
