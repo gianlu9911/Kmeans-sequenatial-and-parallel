@@ -29,6 +29,9 @@
     <ClInclude Include="Sequential.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="Seq_SoA_kmeans.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="data.csv">
