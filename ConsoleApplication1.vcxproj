@@ -145,6 +145,7 @@
     <ClInclude Include="Cluster.h" />
     <ClInclude Include="PointGeneretor.h" />
     <ClInclude Include="Sequential.h" />
+    <ClInclude Include="Seq_SoA_kmeans.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="data.csv" />

@@ -6,6 +6,7 @@
 #include<iostream>
 #include <random>
 #include"Sequential.h"
+#include"Seq_SoA_kmeans.h"
 using namespace std;
 
 
@@ -17,7 +18,7 @@ int main() {
     int max_iteration = 10000;
     std::string filename = "data.csv";  // Example: output file name
     //generateRandomPoints(numPoints, dimensionality, filename);
-    std::string run_condition = "sequential";
+    std::string run_condition = "sequentia";
 
 
     if(run_condition=="sequential") {
@@ -35,6 +36,13 @@ int main() {
         plotPoints(kmeans.get_points(), kmeans.get_clusters());
 
         std::cout << "Time taken by function: " << duration.count() << " microseconds" << std::endl;
+    }
+    else {
+        readCSVtoVector(filename);
+        init_clusterss(num_clusters);
+        std::cout << clusterss.x[1] << std::endl;
+        std::cout << clusterss.x.size() << std::endl;
+        plot_struct(numPoints,num_clusters);
     }
 
     return 0;
