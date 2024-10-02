@@ -118,7 +118,7 @@ void assign_point(int num_points = 100, int num_clusters=5) {
         clusterss.cum_sum_y[assign] += pointss.y[i];
 
     }
-}
+    }
 
 bool update_centroids(int num_clusters, double tollerance = 0.001) {
     bool condition = true;
