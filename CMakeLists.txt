@@ -7,10 +7,13 @@ include_directories( include)
 # Add executable targets
 add_executable(s_AoS kmeans_AoS.cpp)
 add_executable(s_SoA kmeans_SoA.cpp)
+add_executable(sequentialSolver sequential_SoA.cpp)
+
 
 
 find_package(OpenMP REQUIRED)
-add_executable(solver omp_test.cpp)
+add_executable(solver parallel_kmeans.cpp)
+
 target_link_libraries(solver PRIVATE OpenMP::OpenMP_CXX)
 
 add_custom_command(TARGET s_AoS s_SoA POST_BUILD
