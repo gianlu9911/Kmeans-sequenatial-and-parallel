@@ -69,7 +69,7 @@ int main() {
     std::string output_centroids = "../data/centroids_sequential.csv"; // CSV filename
 
     // Initialize number of points and clusters
-    int numPoints = 100000; // example value
+    int numPoints = 10000000; // example value
     int numClusters = 5; // example value
     float min = -100.0f, max = 100.0f;
 
